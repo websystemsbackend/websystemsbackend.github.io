@@ -14,8 +14,9 @@
   <div class="page-bg"></div>
   <header class="site-header">
     <a href="#top" class="logo">WebSystems<span>Backend</span></a>
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
       <a href="#services" data-i18n="nav_services">Услуги</a>
+      <a href="#portfolio" data-i18n="nav_portfolio">Портфолио</a>
       <a href="#experience" data-i18n="nav_experience">Опыт</a>
       <a href="#contacts" data-i18n="nav_contacts">Контакты</a>
     </nav>
@@ -29,9 +30,7 @@
         <h1 data-i18n="hero_title">Владимир С.</h1>
         <p class="hero-subtitle" data-i18n="hero_subtitle">Разработка веб-систем, интернет-магазинов и CRM</p>
         <p class="hero-copy" data-i18n="hero_copy">Более 15 лет коммерческого опыта. Выполняю проекты полного цикла: проектирование, backend-разработка, интеграции, настройка инфраструктуры и запуск системы.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="https://t.me/websystems_backend" target="_blank" rel="noreferrer" data-i18n="btn_telegram">Написать в Telegram</a>
-          <a class="button" href="mailto:websystems.backend@gmail.com" data-i18n="btn_email">Написать на Email</a>
+        <div class="hero-pdf-actions">
           <a class="button" data-download-ru href="assets/resume_vladimir_s_ru.pdf" target="_blank" rel="noreferrer" data-i18n="btn_pdf_ru">Открыть PDF</a>
           <a class="button hidden" data-download-en href="assets/resume_vladimir_s_en.pdf" target="_blank" rel="noreferrer" data-i18n="btn_pdf_en">Open PDF</a>
         </div>
@@ -41,6 +40,35 @@
         <div class="status-card">
           <span class="status-dot"></span>
           <span data-i18n="status">Открыт к проектному сотрудничеству</span>
+        </div>
+      </div>
+      <div class="hero-actions contact-actions" aria-label="Quick contacts">
+        <div class="contact-button primary-contact">
+          <a class="contact-main" href="tel:+79997975127">
+            <span data-i18n="contact_phone">Телефон</span>
+            <strong>+7 999 797 51 27</strong>
+          </a>
+          <button class="copy-icon" type="button" data-copy="+79997975127" aria-label="Copy Phone" title="Copy Phone">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8h10v10H8z"></path><path d="M6 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"></path></svg>
+          </button>
+        </div>
+        <div class="contact-button">
+          <a class="contact-main" href="https://t.me/websystems_backend" target="_blank" rel="noreferrer">
+            <span data-i18n="contact_telegram">Telegram</span>
+            <strong>@websystems_backend</strong>
+          </a>
+          <button class="copy-icon" type="button" data-copy="@websystems_backend" aria-label="Copy Telegram" title="Copy Telegram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8h10v10H8z"></path><path d="M6 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"></path></svg>
+          </button>
+        </div>
+        <div class="contact-button">
+          <a class="contact-main" href="mailto:websystems.backend@gmail.com">
+            <span>Email</span>
+            <strong>websystems.backend@gmail.com</strong>
+          </a>
+          <button class="copy-icon" type="button" data-copy="websystems.backend@gmail.com" aria-label="Copy Email" title="Copy Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8h10v10H8z"></path><path d="M6 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"></path></svg>
+          </button>
         </div>
       </div>
     </section>
@@ -58,7 +86,7 @@
       </div>
     </section>
 
-    <section class="section split">
+    <section class="section split" id="profile">
       <div>
         <p class="eyebrow" data-i18n="profile_eyebrow">Профиль</p>
         <h2 data-i18n="profile_title">Опыт разработчика, технического руководителя и архитектора решений</h2>
@@ -70,32 +98,84 @@
       </div>
     </section>
 
-    <section class="section tech-section">
+    <section class="section current-section" id="current">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="current_eyebrow">Сейчас</p>
+        <h2 data-i18n="current_title">Текущая деятельность</h2>
+        <p class="section-lead" data-i18n="current_text">Проектная разработка и поддержка веб-систем. Последний проект — CRM для агентства недвижимости на Laravel.</p>
+      </div>
+      <details class="more-box current-more current-details">
+        <summary data-i18n="current_more_title">Подробнее о текущем проекте</summary>
+        <ul>
+          <li data-i18n="current_more_1">Проектирование архитектуры CRM-системы с нуля на Laravel.</li>
+          <li data-i18n="current_more_2">Автоматический сбор, парсинг и обработка данных по рынку недвижимости из разных источников.</li>
+          <li data-i18n="current_more_3">Интеграция SMS, Email и внешних сервисов уведомлений.</li>
+          <li data-i18n="current_more_4">Использование AI-инструментов для обработки входящей информации и анализа данных.</li>
+          <li data-i18n="current_more_5">Цель проекта — автоматизация внутренних процессов и снижение ручной работы сотрудников агентства.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="section tech-section" id="tech">
       <div class="section-head">
         <p class="eyebrow" data-i18n="tech_eyebrow">Стек</p>
         <h2 data-i18n="tech_title">Технологии</h2>
       </div>
       <div class="chips" aria-label="Technology links">
-        <a class="chip" href="https://www.php.net/" target="_blank" rel="noreferrer" title="Открыть справку: PHP">PHP</a>
-        <a class="chip" href="https://laravel.com/" target="_blank" rel="noreferrer" title="Открыть справку: Laravel">Laravel</a>
-        <a class="chip" href="https://business.adobe.com/products/magento/magento-commerce.html" target="_blank" rel="noreferrer" title="Открыть справку: Magento">Magento</a>
-        <a class="chip" href="https://www.python.org/" target="_blank" rel="noreferrer" title="Открыть справку: Python">Python</a>
-        <a class="chip" href="https://www.mysql.com/" target="_blank" rel="noreferrer" title="Открыть справку: MySQL">MySQL</a>
-        <a class="chip" href="https://www.postgresql.org/" target="_blank" rel="noreferrer" title="Открыть справку: PostgreSQL">PostgreSQL</a>
-        <a class="chip" href="https://kafka.apache.org/" target="_blank" rel="noreferrer" title="Открыть справку: Kafka">Kafka</a>
-        <a class="chip" href="https://redis.io/" target="_blank" rel="noreferrer" title="Открыть справку: Redis">Redis</a>
-        <a class="chip" href="https://clickhouse.com/" target="_blank" rel="noreferrer" title="Открыть справку: ClickHouse">ClickHouse</a>
-        <a class="chip" href="https://www.docker.com/" target="_blank" rel="noreferrer" title="Открыть справку: Docker">Docker</a>
-        <a class="chip" href="https://www.jenkins.io/" target="_blank" rel="noreferrer" title="Открыть справку: Jenkins">Jenkins</a>
-        <a class="chip" href="https://en.wikipedia.org/wiki/CI/CD" target="_blank" rel="noreferrer" title="Открыть справку: CI/CD">CI/CD</a>
-        <a class="chip" href="https://www.kernel.org/" target="_blank" rel="noreferrer" title="Открыть справку: Linux">Linux</a>
-        <a class="chip" href="https://git-scm.com/" target="_blank" rel="noreferrer" title="Открыть справку: Git">Git</a>
-        <a class="chip" href="https://yandex.cloud/" target="_blank" rel="noreferrer" title="Открыть справку: Yandex Cloud">Yandex Cloud</a>
-        <a class="chip" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer" title="Открыть справку: CSS">CSS</a>
-        <a class="chip" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" title="Открыть справку: JavaScript">JavaScript</a>
-        <a class="chip" href="https://livewire.laravel.com/" target="_blank" rel="noreferrer" title="Открыть справку: Laravel Livewire">Laravel Livewire</a>
-        <a class="chip" href="https://wordpress.org/" target="_blank" rel="noreferrer" title="Открыть справку: WordPress">WordPress</a>
-        <a class="chip" href="https://www.drupal.org/" target="_blank" rel="noreferrer" title="Открыть справку: Drupal">Drupal</a>
+        <a class="chip" href="https://www.php.net/" target="_blank" rel="noreferrer" title="PHP">PHP</a>
+        <a class="chip" href="https://laravel.com/" target="_blank" rel="noreferrer" title="Laravel">Laravel</a>
+        <a class="chip" href="https://business.adobe.com/products/magento/magento-commerce.html" target="_blank" rel="noreferrer" title="Magento">Magento</a>
+        <a class="chip" href="https://www.python.org/" target="_blank" rel="noreferrer" title="Python">Python</a>
+        <a class="chip" href="https://www.mysql.com/" target="_blank" rel="noreferrer" title="MySQL">MySQL</a>
+        <a class="chip" href="https://www.postgresql.org/" target="_blank" rel="noreferrer" title="PostgreSQL">PostgreSQL</a>
+        <a class="chip" href="https://kafka.apache.org/" target="_blank" rel="noreferrer" title="Kafka">Kafka</a>
+        <a class="chip" href="https://redis.io/" target="_blank" rel="noreferrer" title="Redis">Redis</a>
+        <a class="chip" href="https://clickhouse.com/" target="_blank" rel="noreferrer" title="ClickHouse">ClickHouse</a>
+        <a class="chip" href="https://www.docker.com/" target="_blank" rel="noreferrer" title="Docker">Docker</a>
+        <a class="chip" href="https://www.jenkins.io/" target="_blank" rel="noreferrer" title="Jenkins">Jenkins</a>
+        <a class="chip" href="https://en.wikipedia.org/wiki/CI/CD" target="_blank" rel="noreferrer" title="CI/CD">CI/CD</a>
+        <a class="chip" href="https://www.kernel.org/" target="_blank" rel="noreferrer" title="Linux">Linux</a>
+        <a class="chip" href="https://git-scm.com/" target="_blank" rel="noreferrer" title="Git">Git</a>
+        <a class="chip" href="https://yandex.cloud/" target="_blank" rel="noreferrer" title="Yandex Cloud">Yandex Cloud</a>
+        <a class="chip" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer" title="CSS">CSS</a>
+        <a class="chip" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" title="JavaScript">JavaScript</a>
+        <a class="chip" href="https://livewire.laravel.com/" target="_blank" rel="noreferrer" title="Laravel Livewire">Laravel Livewire</a>
+        <a class="chip" href="https://wordpress.org/" target="_blank" rel="noreferrer" title="WordPress">WordPress</a>
+        <a class="chip" href="https://www.drupal.org/" target="_blank" rel="noreferrer" title="Drupal">Drupal</a>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="portfolio_eyebrow">Портфолио</p>
+        <h2 data-i18n="portfolio_title">Кейсы и направления проектов</h2>
+        <p class="section-lead" data-i18n="portfolio_lead">Коротко на карточках — с подробностями в попапе, чтобы не перегружать страницу.</p>
+      </div>
+      <div class="cards portfolio-grid">
+        <article class="card portfolio-card">
+          <span class="tag">Laravel • CRM • AI</span>
+          <h3 data-i18n="pf_crm_title">CRM для агентства недвижимости</h3>
+          <p data-i18n="pf_crm_short">Внутренняя система для автоматизации работы агентства, сбора данных и уведомлений.</p>
+          <button class="button small open-modal portfolio-more" type="button" data-modal="crm" data-i18n="portfolio_more">Подробнее</button>
+        </article>
+        <article class="card portfolio-card">
+          <span class="tag">Kafka • ClickHouse</span>
+          <h3 data-i18n="pf_topgo_title">Сервис уведомлений для доставки</h3>
+          <p data-i18n="pf_topgo_short">Отказоустойчивый микросервис уведомлений для агрегатора курьерской доставки.</p>
+          <button class="button small open-modal portfolio-more" type="button" data-modal="topgo" data-i18n="portfolio_more">Подробнее</button>
+        </article>
+        <article class="card portfolio-card">
+          <span class="tag">Magento • E-commerce</span>
+          <h3 data-i18n="pf_ecom_title">Интернет-магазины и e-commerce</h3>
+          <p data-i18n="pf_ecom_short">Опыт разработки магазинов, маркетплейсов, подписок, оплат и интеграций.</p>
+          <button class="button small open-modal portfolio-more" type="button" data-modal="ecom" data-i18n="portfolio_more">Подробнее</button>
+        </article>
+        <article class="card portfolio-card">
+          <span class="tag">Python • PostgreSQL • TDD</span>
+          <h3 data-i18n="pf_saby_title">Платформа обработки данных</h3>
+          <p data-i18n="pf_saby_short">Поиск, фильтрация, аналитика данных, оптимизация SQL и внедрение автотестов.</p>
+          <button class="button small open-modal portfolio-more" type="button" data-modal="saby" data-i18n="portfolio_more">Подробнее</button>
+        </article>
       </div>
     </section>
 
@@ -105,151 +185,66 @@
         <h2 data-i18n="exp_title">Ключевые проекты</h2>
       </div>
       <div class="timeline">
-        <article class="timeline-item project-card">
-          <div class="time">03/2018 - 01/2024</div>
-          <div>
-            <h3>HeadMage</h3>
-            <p class="role" data-i18n="exp_headmage_role">Основатель / технический директор веб-студии</p>
-            <ul>
-              <li data-i18n="exp_headmage_1">Руководил собственной веб-студией, специализировавшейся на Laravel, Magento, CRM и e-commerce проектах.</li>
-              <li data-i18n="exp_headmage_2">Проектировал архитектуру интернет-магазинов, CRM-систем и интеграционных решений для российских и зарубежных заказчиков.</li>
-              <li data-i18n="exp_headmage_3">Отвечал за полный цикл реализации: оценка, планирование, разработка, релизы, запуск и дальнейшая поддержка.</li>
-              <li data-i18n="exp_headmage_4">Организовывал процессы разработки, Code Review, CI/CD и выпуск релизов с использованием Jenkins.</li>
-            </ul>
-            <details class="more-box">
-              <summary data-i18n="more_project">Подробнее</summary>
-              <ul>
-                <li data-i18n="exp_headmage_more_1">Работал с заказчиками напрямую: помогал превращать бизнес-задачи в понятные технические требования и план разработки.</li>
-                <li data-i18n="exp_headmage_more_2">Подбирал решения под бюджет, сроки и состояние существующего проекта: от доработки legacy-кода до проектирования новых модулей.</li>
-                <li data-i18n="exp_headmage_more_3">Совмещал техническую работу с управлением командой: постановка задач, проверка решений, контроль релизов и поддержка после запуска.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-        <article class="timeline-item project-card">
-          <div class="time">09/2024 - 09/2025</div>
-          <div>
-            <h3>СБИС / Saby</h3>
-            <p class="role" data-i18n="exp_saby_role">Руководитель подразделения / ведущий Python-разработчик</p>
-            <ul>
-              <li data-i18n="exp_saby_1">Развивал платформу поиска, обработки и анализа данных о компаниях и владельцах.</li>
-              <li data-i18n="exp_saby_2">Разрабатывал функционал поиска, фильтрации и обработки больших объемов данных на Python и PostgreSQL.</li>
-              <li data-i18n="exp_saby_3">Внедрил практику автоматических тестов и TDD для повышения качества разработки.</li>
-              <li data-i18n="exp_saby_4">Оптимизировал бизнес-логику и SQL-запросы, повышая производительность платформы.</li>
-              <li data-i18n="exp_saby_5">Подготавливал и декомпозировал задачи, проводил Code Review и участвовал в развитии процессов разработки.</li>
-            </ul>
-            <details class="more-box">
-              <summary data-i18n="more_project">Подробнее</summary>
-              <ul>
-                <li data-i18n="exp_saby_more_1">Работал с проблемной платформой, где было важно повысить стабильность изменений и снизить количество ошибок.</li>
-                <li data-i18n="exp_saby_more_2">Внедрение автотестов и TDD помогало безопаснее менять бизнес-логику и быстрее проверять корректность доработок.</li>
-                <li data-i18n="exp_saby_more_3">Code Review использовался не только для контроля качества, но и для выравнивания подходов внутри подразделения.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-        <article class="timeline-item project-card">
-          <div class="time">06/2024 - 08/2024</div>
-          <div>
-            <h3>TopGo</h3>
-            <p class="role" data-i18n="exp_topgo_role">Ведущий PHP-разработчик / архитектор микросервисов</p>
-            <ul>
-              <li data-i18n="exp_topgo_1">Спроектировал и реализовал отказоустойчивый микросервис уведомлений для агрегатора курьерской доставки.</li>
-              <li data-i18n="exp_topgo_2">Внедрил Kafka для быстрой и бесперебойной доставки уведомлений курьерам.</li>
-              <li data-i18n="exp_topgo_3">Интегрировал ClickHouse для хранения аналитических данных, логов и истории действий.</li>
-              <li data-i18n="exp_topgo_4">Настроил CI/CD процессы автоматической сборки и деплоя в инфраструктуре Yandex Cloud.</li>
-              <li data-i18n="exp_topgo_5">Координировал техническое взаимодействие с внешними подрядчиками по разработке и тестированию.</li>
-            </ul>
-            <details class="more-box">
-              <summary data-i18n="more_project">Подробнее</summary>
-              <ul>
-                <li data-i18n="exp_topgo_more_1">Kafka использовалась для доставки событий уведомлений без блокировки основного сценария работы сервиса.</li>
-                <li data-i18n="exp_topgo_more_2">ClickHouse был интегрирован как хранилище аналитических данных, логов и истории действий с возможностью автоматической очистки устаревших записей.</li>
-                <li data-i18n="exp_topgo_more_3">Отдельное внимание уделялось отказоустойчивости и предсказуемому деплою в облачной инфраструктуре.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-        <article class="timeline-item project-card">
-          <div class="time">09/2016 - 03/2021</div>
-          <div>
-            <h3>ThriveMarket</h3>
-            <p class="role" data-i18n="exp_thrive_role">Ведущий PHP-разработчик, удаленный контракт</p>
-            <ul>
-              <li data-i18n="exp_thrive_1">Работал над крупной e-commerce платформой по продаже органических продуктов по подписочной модели.</li>
-              <li data-i18n="exp_thrive_2">Интегрировал систему очередей Kafka в экосистему Magento для повышения отказоустойчивости и масштабируемости.</li>
-              <li data-i18n="exp_thrive_3">Спроектировал и реализовал систему автоматической повторяемой доставки товаров.</li>
-              <li data-i18n="exp_thrive_4">Поддерживал интеграции с Braintree, DHL, Sailthru и другими внешними сервисами.</li>
-              <li data-i18n="exp_thrive_5">Разрабатывал REST API и покрывал бизнес-логику автоматизированными тестами.</li>
-            </ul>
-            <details class="more-box">
-              <summary data-i18n="more_project">Подробнее</summary>
-              <ul>
-                <li data-i18n="exp_thrive_more_1">Работал с критичными частями e-commerce платформы: подписки, повторные заказы, платежи, логистика и внешние интеграции.</li>
-                <li data-i18n="exp_thrive_more_2">Kafka помогала выносить тяжелые и асинхронные операции из основного пользовательского сценария.</li>
-                <li data-i18n="exp_thrive_more_3">Поддерживал REST-слой для frontend-приложений и писал автоматизированные тесты для бизнес-логики.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-        <article class="timeline-item project-card">
-          <div class="time">02/2014 - 09/2016</div>
-          <div>
-            <h3>BloomNation</h3>
-            <p class="role" data-i18n="exp_bloom_role">Ведущий PHP-разработчик, удаленный контракт</p>
-            <ul>
-              <li data-i18n="exp_bloom_1">Развивал Magento-маркетплейс для продавцов цветочной продукции.</li>
-              <li data-i18n="exp_bloom_2">Разрабатывал личный кабинет продавца, управление каталогом товаров и обработку заказов.</li>
-              <li data-i18n="exp_bloom_3">Оптимизировал процессы продавцов с помощью асинхронной обработки данных и очередей.</li>
-              <li data-i18n="exp_bloom_4">Интегрировал Stripe и сопутствующие сервисы.</li>
-              <li data-i18n="exp_bloom_5">Участвовал в развитии мультидоменной платформы для маркетплейса и отдельных сайтов продавцов.</li>
-            </ul>
-            <details class="more-box">
-              <summary data-i18n="more_project">Подробнее</summary>
-              <ul>
-                <li data-i18n="exp_bloom_more_1">Проект был не обычным интернет-магазином, а маркетплейсом с большим количеством продавцов и отдельными сайтами.</li>
-                <li data-i18n="exp_bloom_more_2">Работал с кабинетом продавца, каталогом, заказами, промо-механиками и мультидоменной архитектурой Magento.</li>
-                <li data-i18n="exp_bloom_more_3">Асинхронная обработка помогала ускорять операции продавцов и снижать нагрузку на основную систему.</li>
-              </ul>
-            </details>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section current-section">
-      <div class="current-card">
-        <p class="eyebrow" data-i18n="current_eyebrow">Сейчас</p>
-        <h2 data-i18n="current_title">Текущая деятельность</h2>
-        <p data-i18n="current_text">Проектная разработка и поддержка веб-систем. Последний проект — CRM для агентства недвижимости на Laravel.</p>
-        <details class="more-box current-more">
-          <summary data-i18n="current_more_title">Подробнее о текущем проекте</summary>
-          <ul>
-            <li data-i18n="current_more_1">Проектирование архитектуры CRM-системы с нуля на Laravel.</li>
-            <li data-i18n="current_more_2">Автоматический сбор, парсинг и обработка данных по рынку недвижимости из разных источников.</li>
-            <li data-i18n="current_more_3">Интеграция SMS, Email и внешних сервисов уведомлений.</li>
-            <li data-i18n="current_more_4">Использование AI-инструментов для обработки входящей информации и анализа данных.</li>
-            <li data-i18n="current_more_5">Цель проекта — автоматизация внутренних процессов и снижение ручной работы сотрудников агентства.</li>
-          </ul>
-        </details>
+        <article class="timeline-item project-card"><div class="time">03/2018 - 01/2024</div><div><h3>HeadMage</h3><p class="role" data-i18n="exp_headmage_role">Основатель / технический директор веб-студии</p><ul><li data-i18n="exp_headmage_1">Руководил собственной веб-студией, специализировавшейся на Laravel, Magento, CRM и e-commerce проектах.</li><li data-i18n="exp_headmage_2">Проектировал архитектуру интернет-магазинов, CRM-систем и интеграционных решений для российских и зарубежных заказчиков.</li><li data-i18n="exp_headmage_3">Отвечал за полный цикл реализации: оценка, планирование, разработка, релизы, запуск и дальнейшая поддержка.</li><li data-i18n="exp_headmage_4">Организовывал процессы разработки, Code Review, CI/CD и выпуск релизов с использованием Jenkins.</li></ul><button class="button small open-modal project-more" type="button" data-modal="headmage" data-i18n="portfolio_more">Подробнее</button></div></article>
+        <article class="timeline-item project-card"><div class="time">09/2024 - 09/2025</div><div><h3>СБИС / Saby</h3><p class="role" data-i18n="exp_saby_role">Руководитель подразделения / ведущий Python-разработчик</p><ul><li data-i18n="exp_saby_1">Развивал платформу поиска, обработки и анализа данных о компаниях и владельцах.</li><li data-i18n="exp_saby_2">Разрабатывал функционал поиска, фильтрации и обработки больших объемов данных на Python и PostgreSQL.</li><li data-i18n="exp_saby_3">Внедрил практику автоматических тестов и TDD для повышения качества разработки.</li><li data-i18n="exp_saby_4">Оптимизировал бизнес-логику и SQL-запросы, повышая производительность платформы.</li><li data-i18n="exp_saby_5">Подготавливал и декомпозировал задачи, проводил Code Review и участвовал в развитии процессов разработки.</li></ul><button class="button small open-modal project-more" type="button" data-modal="saby" data-i18n="portfolio_more">Подробнее</button></div></article>
+        <article class="timeline-item project-card"><div class="time">06/2024 - 08/2024</div><div><h3>TopGo</h3><p class="role" data-i18n="exp_topgo_role">Ведущий PHP-разработчик / архитектор микросервисов</p><ul><li data-i18n="exp_topgo_1">Спроектировал и реализовал отказоустойчивый микросервис уведомлений для агрегатора курьерской доставки.</li><li data-i18n="exp_topgo_2">Внедрил Kafka для быстрой и бесперебойной доставки уведомлений курьерам.</li><li data-i18n="exp_topgo_3">Интегрировал ClickHouse для хранения аналитических данных, логов и истории действий.</li><li data-i18n="exp_topgo_4">Настроил CI/CD процессы автоматической сборки и деплоя в инфраструктуре Yandex Cloud.</li><li data-i18n="exp_topgo_5">Координировал техническое взаимодействие с внешними подрядчиками по разработке и тестированию.</li></ul><button class="button small open-modal project-more" type="button" data-modal="topgo" data-i18n="portfolio_more">Подробнее</button></div></article>
+        <article class="timeline-item project-card"><div class="time">09/2016 - 03/2021</div><div><h3>ThriveMarket</h3><p class="role" data-i18n="exp_thrive_role">Ведущий PHP-разработчик, удаленный контракт</p><ul><li data-i18n="exp_thrive_1">Работал над крупной e-commerce платформой по продаже органических продуктов по подписочной модели.</li><li data-i18n="exp_thrive_2">Интегрировал систему очередей Kafka в экосистему Magento для повышения отказоустойчивости и масштабируемости.</li><li data-i18n="exp_thrive_3">Спроектировал и реализовал систему автоматической повторяемой доставки товаров.</li><li data-i18n="exp_thrive_4">Поддерживал интеграции с Braintree, DHL, Sailthru и другими внешними сервисами.</li><li data-i18n="exp_thrive_5">Разрабатывал REST API и покрывал бизнес-логику автоматизированными тестами.</li></ul><button class="button small open-modal project-more" type="button" data-modal="thrive" data-i18n="portfolio_more">Подробнее</button></div></article>
+        <article class="timeline-item project-card"><div class="time">02/2014 - 09/2016</div><div><h3>BloomNation</h3><p class="role" data-i18n="exp_bloom_role">Ведущий PHP-разработчик, удаленный контракт</p><ul><li data-i18n="exp_bloom_1">Развивал Magento-маркетплейс для продавцов цветочной продукции.</li><li data-i18n="exp_bloom_2">Разрабатывал личный кабинет продавца, управление каталогом товаров и обработку заказов.</li><li data-i18n="exp_bloom_3">Оптимизировал процессы продавцов с помощью асинхронной обработки данных и очередей.</li><li data-i18n="exp_bloom_4">Интегрировал Stripe и сопутствующие сервисы.</li><li data-i18n="exp_bloom_5">Участвовал в развитии мультидоменной платформы для маркетплейса и отдельных сайтов продавцов.</li></ul><button class="button small open-modal project-more" type="button" data-modal="bloom" data-i18n="portfolio_more">Подробнее</button></div></article>
       </div>
     </section>
 
     <section class="section contacts" id="contacts">
-      <div>
+      <div class="section-head">
         <p class="eyebrow" data-i18n="contacts_eyebrow">Контакты</p>
         <h2 data-i18n="contacts_title">Обсудим ваш проект</h2>
-        <p data-i18n="contacts_text">Подходит формат проектной работы, контракта, поддержки или разработки системы под ключ.</p>
+        <p class="section-lead" data-i18n="contacts_text">Подходит формат проектной работы, контракта, поддержки или разработки системы под ключ.</p>
       </div>
-      <div class="contact-links">
-        <a href="https://t.me/websystems_backend" target="_blank" rel="noreferrer">Telegram: @websystems_backend</a>
-        <a href="mailto:websystems.backend@gmail.com">websystems.backend@gmail.com</a>
-        <a href="https://github.com/websystemsbackend" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/websystemsbackend" target="_blank" rel="noreferrer">LinkedIn</a>
+      <div class="contact-panel">
+        <div class="contact-button primary-contact">
+          <a class="contact-main" href="tel:+79997975127">
+          <span data-i18n="contact_phone">Телефон</span>
+          <strong>+7 999 797 51 27</strong>
+          </a>
+          <button class="copy-icon" type="button" data-copy="+79997975127" aria-label="Copy Phone" title="Copy Phone">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8h10v10H8z"></path><path d="M6 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"></path></svg>
+          </button>
+        </div>
+        <div class="contact-button">
+          <a class="contact-main" href="https://t.me/websystems_backend" target="_blank" rel="noreferrer">
+          <span data-i18n="contact_telegram">Telegram</span>
+          <strong>@websystems_backend</strong>
+          </a>
+          <button class="copy-icon" type="button" data-copy="@websystems_backend" aria-label="Copy Telegram" title="Copy Telegram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8h10v10H8z"></path><path d="M6 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"></path></svg>
+          </button>
+        </div>
+        <div class="contact-button">
+          <a class="contact-main" href="mailto:websystems.backend@gmail.com">
+          <span>Email</span>
+          <strong>websystems.backend@gmail.com</strong>
+          </a>
+          <button class="copy-icon" type="button" data-copy="websystems.backend@gmail.com" aria-label="Copy Email" title="Copy Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8h10v10H8z"></path><path d="M6 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"></path></svg>
+          </button>
+        </div>
+        <div class="contact-socials">
+          <a class="contact-link" href="https://github.com/websystemsbackend" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/websystemsbackend" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
       </div>
     </section>
   </main>
 
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" id="modalClose" aria-label="Close">×</button>
+      <p class="eyebrow" id="modalEyebrow"></p>
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <footer class="footer">© <span id="year"></span> WebSystems Backend</footer>
   <script src="script.js"></script>
 </body>
