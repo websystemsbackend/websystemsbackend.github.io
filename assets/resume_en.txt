@@ -1,0 +1,143 @@
+VLADIMIR S.
+
+Development of web systems, e-commerce platforms and CRM solutions
+
+Email: websystems.backend@gmail.com
+Telegram: @websystems_backend
+Phone: +7 999 797 51 27
+LinkedIn: www.linkedin.com/in/websystemsbackend
+GitHub: https://github.com/websystemsbackend
+Timezone: Kaliningrad (UTC+2)
+Self-employed / contract-based collaboration
+
+--------------------------------------------------------------------------------
+
+COLLABORATION FORMAT
+
+• I work on project-based development, contract work, backend development and support of existing systems.
+• Open to collaboration with Russian and international clients.
+• Areas of responsibility: development and launch of e-commerce platforms, CRM and internal business systems, architecture design, performance optimization, third-party integrations, support and modernization of existing projects.
+• I perform performance and security audits of web applications, help identify bottlenecks, reduce infrastructure load and address security risks.
+
+--------------------------------------------------------------------------------
+
+KEY PROFILE
+
+• 15+ years of commercial experience in web applications, e-commerce platforms and internal business systems.
+• 6 years of experience managing my own web studio. I understand client business processes, can build direct communication, form teams and organize development processes.
+• Specialized in architecture design from scratch, high-load system optimization, integrations, performance and security audits, and modernization of legacy projects.
+• I deliver full-cycle projects where I take responsibility for architecture, development, integrations, infrastructure setup and launch.
+• Practical experience as a developer, technical lead and solution architect.
+
+--------------------------------------------------------------------------------
+
+CURRENT ACTIVITY
+
+Currently working on project-based development and support of web systems.
+
+Latest project:
+
+- CRM system development for a real estate agency using Laravel.
+- Automated collection and processing of real estate market data from multiple sources.
+- Integration of SMS, Email and external notification services.
+- Use of AI for data analysis and business process automation.
+
+--------------------------------------------------------------------------------
+
+SKILLS AND TECHNOLOGIES
+
+Core expertise:
+PHP, Laravel, Magento, Python, architecture design, high-load systems, REST API, third-party integrations, MySQL, PostgreSQL.
+
+Additional expertise:
+Kafka, Redis, ClickHouse, Docker, Jenkins, CI/CD, Linux, Git, Yandex Cloud.
+
+Additional experience:
+Frontend: CSS, JavaScript, Laravel Livewire. WordPress, Drupal.
+
+--------------------------------------------------------------------------------
+
+PROJECT EXPERIENCE
+
+HeadMage (Web Studio)
+03/2018 - 01/2024
+Role: Founder / Technical Director
+
+• Own web studio focused on e-commerce platforms, CRM and internal business systems using Laravel and Magento.
+
+- Designed architecture for e-commerce platforms, CRM systems and integration solutions for Russian and international clients.
+- Managed the full project lifecycle: from estimation and planning to launch and ongoing support.
+- Developed high-load solutions in e-commerce, business process automation and data processing.
+- Organized development, quality control and release processes using Jenkins and CI/CD practices.
+- Communicated with clients, helped define technical requirements and choose optimal architecture solutions.
+- Built and developed a team of developers, performed Code Review and technical interviews.
+
+Saby / SBIS
+09/2024 - 09/2025
+Role: Department Lead / Senior Python Developer
+
+• Project: development of a platform for searching, processing and analyzing data about companies and owners.
+
+- Led the development department and participated in technical decision-making for platform development.
+- Developed and supported search, filtering and data processing functionality for large volumes of company and owner data.
+- Introduced automated testing practices and TDD to improve code quality.
+- Optimized business logic and SQL queries, improving performance for large data volumes.
+- Prepared and decomposed tasks, performed Code Review and contributed to development process improvement.
+- Main focus: test automation, performance optimization and development of a data processing platform.
+
+TopGo
+06/2024 - 08/2024
+Role: Senior PHP Developer / Microservices Architect
+
+• Project: courier delivery aggregator with microservice architecture and high load on the notification system.
+
+- Designed and implemented a fault-tolerant notification microservice supporting multiple delivery channels.
+- Implemented Kafka for fast and reliable delivery of notifications to couriers.
+- Integrated ClickHouse for storing analytical data, logs and action history.
+- Set up CI/CD processes for automatic build and deployment in Yandex Cloud infrastructure.
+- Participated in system component integration and solution architecture design.
+- Coordinated technical communication with external development and testing contractors.
+
+ThriveMarket
+09/2016 - 03/2021
+Role: Senior PHP Developer (Remote contract)
+
+• Large e-commerce platform selling organic products based on a subscription model.
+
+- Integrated Kafka queue system into the Magento ecosystem to improve fault tolerance and scalability.
+- Designed and implemented an automatic recurring product delivery system for the subscription business model.
+- Developed and supported integrations with payment, logistics and marketing services, including Braintree, DHL and Sailthru.
+- Worked with complex subscription logic, payments and large data volumes in a high-load e-commerce project.
+- Participated in REST API development and automated test coverage of business logic.
+
+BloomNation
+02/2014 - 09/2016
+Role: Senior PHP Developer (Remote contract)
+
+• Marketplace for flower sellers based on Magento.
+
+- Developed and improved the seller dashboard, including product catalog management and order processing.
+- Optimized seller workflows by implementing asynchronous data processing and queues.
+- Extended pricing rules, promotions and coupons for a high-load e-commerce platform.
+- Integrated Stripe payment system and related services.
+- Participated in the development of a multi-domain platform allowing sellers to operate both through the marketplace and their own websites.
+
+Early development experience (2011 - 2014)
+
+AIS - Lead Developer / Development Manager. Managed a team, communicated with clients, worked on a WordPress site builder and developed a lead monitoring system using CodeIgniter and MongoDB.
+
+Freelance (oDesk / Upwork) - developed Magento stores and Drupal content projects for international clients.
+
+WEXO - Magento Developer. Full-stack development of Magento stores, internal company modules and a payment module for a Danish bank.
+
+Qliff - Magento / Drupal Developer. E-commerce and content projects, food delivery service, migration from Drupal 6 to Drupal 7.
+
+FSSP - System Administrator / Developer. Infrastructure and DBMS support, internal debtor search system and integration service with Rostelecom.
+
+--------------------------------------------------------------------------------
+
+EDUCATION AND LANGUAGES
+
+• Omsk State University (Information Technology)
+• Omsk Industrial and Economic College (Information Technology)
+• English: B1/B2 - technical documentation, business correspondence, work calls.
