@@ -8,16 +8,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page-bg"></div>
   <header class="site-header">
-    <a href="#top" class="logo">WebSystems<span>Backend</span></a>
+    <a href="#top" class="logo"><span class="logo-accent">W</span>eb<span class="logo-accent">S</span>ystems<span class="logo-backend">Backend</span></a>
     <nav class="nav" aria-label="Main navigation">
       <a href="#services" data-i18n="nav_services">Услуги</a>
       <a href="#portfolio" data-i18n="nav_portfolio">Портфолио</a>
       <a href="#experience" data-i18n="nav_experience">Опыт</a>
+      <a href="#early" data-i18n="nav_early">Ранний опыт</a>
       <a href="#contacts" data-i18n="nav_contacts">Контакты</a>
     </nav>
     <button class="lang-switch" id="langSwitch" type="button">EN</button>
@@ -190,6 +193,21 @@
         <article class="timeline-item project-card"><div class="time">06/2024 - 08/2024</div><div><h3>TopGo</h3><p class="role" data-i18n="exp_topgo_role">Ведущий PHP-разработчик / архитектор микросервисов</p><ul><li data-i18n="exp_topgo_1">Спроектировал и реализовал отказоустойчивый микросервис уведомлений для агрегатора курьерской доставки.</li><li data-i18n="exp_topgo_2">Внедрил Kafka для быстрой и бесперебойной доставки уведомлений курьерам.</li><li data-i18n="exp_topgo_3">Интегрировал ClickHouse для хранения аналитических данных, логов и истории действий.</li><li data-i18n="exp_topgo_4">Настроил CI/CD процессы автоматической сборки и деплоя в инфраструктуре Yandex Cloud.</li><li data-i18n="exp_topgo_5">Координировал техническое взаимодействие с внешними подрядчиками по разработке и тестированию.</li></ul><button class="button small open-modal project-more" type="button" data-modal="topgo" data-i18n="portfolio_more">Подробнее</button></div></article>
         <article class="timeline-item project-card"><div class="time">09/2016 - 03/2021</div><div><h3>ThriveMarket</h3><p class="role" data-i18n="exp_thrive_role">Ведущий PHP-разработчик, удаленный контракт</p><ul><li data-i18n="exp_thrive_1">Работал над крупной e-commerce платформой по продаже органических продуктов по подписочной модели.</li><li data-i18n="exp_thrive_2">Интегрировал систему очередей Kafka в экосистему Magento для повышения отказоустойчивости и масштабируемости.</li><li data-i18n="exp_thrive_3">Спроектировал и реализовал систему автоматической повторяемой доставки товаров.</li><li data-i18n="exp_thrive_4">Поддерживал интеграции с Braintree, DHL, Sailthru и другими внешними сервисами.</li><li data-i18n="exp_thrive_5">Разрабатывал REST API и покрывал бизнес-логику автоматизированными тестами.</li></ul><button class="button small open-modal project-more" type="button" data-modal="thrive" data-i18n="portfolio_more">Подробнее</button></div></article>
         <article class="timeline-item project-card"><div class="time">02/2014 - 09/2016</div><div><h3>BloomNation</h3><p class="role" data-i18n="exp_bloom_role">Ведущий PHP-разработчик, удаленный контракт</p><ul><li data-i18n="exp_bloom_1">Развивал Magento-маркетплейс для продавцов цветочной продукции.</li><li data-i18n="exp_bloom_2">Разрабатывал личный кабинет продавца, управление каталогом товаров и обработку заказов.</li><li data-i18n="exp_bloom_3">Оптимизировал процессы продавцов с помощью асинхронной обработки данных и очередей.</li><li data-i18n="exp_bloom_4">Интегрировал Stripe и сопутствующие сервисы.</li><li data-i18n="exp_bloom_5">Участвовал в развитии мультидоменной платформы для маркетплейса и отдельных сайтов продавцов.</li></ul><button class="button small open-modal project-more" type="button" data-modal="bloom" data-i18n="portfolio_more">Подробнее</button></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="early">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="early_eyebrow">Ранняя разработка</p>
+        <h2 data-i18n="early_title">База коммерческого опыта: Magento, Drupal, WordPress и внутренние системы</h2>
+        <p class="section-lead" data-i18n="early_lead">Проекты 2011–2014 годов из резюме: от системного администрирования и внутренних сервисов до зарубежного e-commerce.</p>
+      </div>
+      <div class="cards early-grid">
+        <article class="card early-card"><span class="tag">AIS • WordPress • CodeIgniter</span><h3>AIS</h3><p data-i18n="early_ais">Ведущий разработчик / руководитель разработки: команда, коммуникация с заказчиками, конструктор сайтов на WordPress, мониторинг лидов на CodeIgniter и MongoDB.</p></article>
+        <article class="card early-card"><span class="tag">oDesk / Upwork • Magento • Drupal</span><h3>Freelance</h3><p data-i18n="early_freelance">Интернет-магазины на Magento и контентные проекты на Drupal для зарубежных заказчиков.</p></article>
+        <article class="card early-card"><span class="tag">WEXO • Magento</span><h3>WEXO</h3><p data-i18n="early_wexo">Fullstack-разработка интернет-магазинов, поддержка внутренних модулей и платежный модуль для одного из банков Дании.</p></article>
+        <article class="card early-card"><span class="tag">Qliff • Magento • Drupal</span><h3>Qliff</h3><p data-i18n="early_qliff">E-commerce и контентные проекты, сервис доставки еды, миграция проекта с Drupal 6 на Drupal 7.</p></article>
+        <article class="card early-card"><span class="tag">ФССП • Infrastructure • DB</span><h3>ФССП</h3><p data-i18n="early_fssp">Поддержка инфраструктуры и СУБД, разработка внутренней системы поиска информации о должниках и сервиса интеграции с Ростелекомом.</p></article>
       </div>
     </section>
 

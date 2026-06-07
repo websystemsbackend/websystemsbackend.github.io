@@ -150,3 +150,15 @@ section{scroll-margin-top:92px}
 
 /* v19 contacts title spacing */
 #contacts .section-head h2{margin-bottom:24px;}
+
+/* v20: logo accents, modal body scroll, early development section */
+.logo .logo-accent,
+.logo .logo-backend{color:var(--accent)}
+.early-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.early-card:last-child{grid-column:1 / -1}
+.modal{display:flex;flex-direction:column;overflow:hidden;padding:28px 28px 0}
+.modal .eyebrow{flex:0 0 auto}
+.modal h2{flex:0 0 auto}
+#modalBody{overflow:auto;padding:0 6px 28px 0;min-height:0}
+@media (max-width:900px){.early-grid{grid-template-columns:1fr}.early-card:last-child{grid-column:auto}}
+@media (max-width:560px){.modal{padding:24px 18px 0}#modalBody{padding-bottom:24px}}
