@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Владимир С. — WebSystems Backend</title>
+  <meta name="description" content="Разработка веб-систем, интернет-магазинов и CRM. PHP, Laravel, Magento, Python, Kafka, ClickHouse." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+  <header class="site-header">
+    <a href="#top" class="logo">WebSystems<span>Backend</span></a>
+    <nav class="nav">
+      <a href="#services" data-i18n="nav_services">Услуги</a>
+      <a href="#experience" data-i18n="nav_experience">Опыт</a>
+      <a href="#contacts" data-i18n="nav_contacts">Контакты</a>
+    </nav>
+    <button class="lang-switch" id="langSwitch" type="button">EN</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-text">
+        <div class="eyebrow" data-i18n="eyebrow">Проектная разработка • Контракт • Самозанятый</div>
+        <h1 data-i18n="hero_title">Владимир С.</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">Разработка веб-систем, интернет-магазинов и CRM</p>
+        <p class="hero-copy" data-i18n="hero_copy">Более 15 лет коммерческого опыта. Выполняю проекты полного цикла: проектирование, backend-разработка, интеграции, настройка инфраструктуры и запуск системы.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://t.me/websystems_backend" target="_blank" rel="noreferrer" data-i18n="btn_telegram">Написать в Telegram</a>
+          <a class="button" href="mailto:websystems.backend@gmail.com" data-i18n="btn_email">Написать на Email</a>
+          <a class="button" data-download-ru href="assets/resume_vladimir_s_ru.pdf" target="_blank" rel="noreferrer" data-i18n="btn_pdf_ru">Открыть PDF</a>
+          <a class="button hidden" data-download-en href="assets/resume_vladimir_s_en.pdf" target="_blank" rel="noreferrer" data-i18n="btn_pdf_en">Open PDF</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/photo.jpg" alt="Владимир С." />
+        <div class="status-card">
+          <span class="status-dot"></span>
+          <span data-i18n="status">Открыт к проектному сотрудничеству</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section grid-section" id="services">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="services_eyebrow">Что могу сделать</p>
+        <h2 data-i18n="services_title">Закрываю разработку и поддержку сложных веб-систем</h2>
+      </div>
+      <div class="cards four">
+        <article class="card"><h3 data-i18n="srv_crm_title">CRM и внутренние системы</h3><p data-i18n="srv_crm_text">Проектирование и разработка бизнес-систем на Laravel, интеграции, роли, автоматизация процессов.</p></article>
+        <article class="card"><h3 data-i18n="srv_shop_title">Интернет-магазины</h3><p data-i18n="srv_shop_text">Magento, Laravel, платежные системы, подписки, каталоги, личные кабинеты и оптимизация.</p></article>
+        <article class="card"><h3 data-i18n="srv_audit_title">Аудит и оптимизация</h3><p data-i18n="srv_audit_text">Поиск узких мест, оптимизация SQL, производительности, архитектуры и рисков безопасности.</p></article>
+        <article class="card"><h3 data-i18n="srv_integr_title">Интеграции и данные</h3><p data-i18n="srv_integr_text">REST API, Kafka, Redis, ClickHouse, парсинг, очереди, уведомления и внешние сервисы.</p></article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow" data-i18n="profile_eyebrow">Профиль</p>
+        <h2 data-i18n="profile_title">Опыт разработчика, технического руководителя и архитектора решений</h2>
+      </div>
+      <div class="profile-list">
+        <p data-i18n="profile_1">6 лет управлял собственной веб-студией: оценка, планирование, команда, релизы, коммуникация с заказчиками.</p>
+        <p data-i18n="profile_2">Специализируюсь на архитектуре, highload, интеграциях, аудите производительности и поддержке legacy-проектов.</p>
+        <p data-i18n="profile_3">Могу взять проект полного цикла: от идеи и требований до запуска и дальнейшего развития.</p>
+      </div>
+    </section>
+
+    <section class="section tech-section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="tech_eyebrow">Стек</p>
+        <h2 data-i18n="tech_title">Технологии</h2>
+      </div>
+      <div class="chips" aria-label="Technology links">
+        <a class="chip" href="https://www.php.net/" target="_blank" rel="noreferrer" title="Открыть справку: PHP">PHP</a>
+        <a class="chip" href="https://laravel.com/" target="_blank" rel="noreferrer" title="Открыть справку: Laravel">Laravel</a>
+        <a class="chip" href="https://business.adobe.com/products/magento/magento-commerce.html" target="_blank" rel="noreferrer" title="Открыть справку: Magento">Magento</a>
+        <a class="chip" href="https://www.python.org/" target="_blank" rel="noreferrer" title="Открыть справку: Python">Python</a>
+        <a class="chip" href="https://www.mysql.com/" target="_blank" rel="noreferrer" title="Открыть справку: MySQL">MySQL</a>
+        <a class="chip" href="https://www.postgresql.org/" target="_blank" rel="noreferrer" title="Открыть справку: PostgreSQL">PostgreSQL</a>
+        <a class="chip" href="https://kafka.apache.org/" target="_blank" rel="noreferrer" title="Открыть справку: Kafka">Kafka</a>
+        <a class="chip" href="https://redis.io/" target="_blank" rel="noreferrer" title="Открыть справку: Redis">Redis</a>
+        <a class="chip" href="https://clickhouse.com/" target="_blank" rel="noreferrer" title="Открыть справку: ClickHouse">ClickHouse</a>
+        <a class="chip" href="https://www.docker.com/" target="_blank" rel="noreferrer" title="Открыть справку: Docker">Docker</a>
+        <a class="chip" href="https://www.jenkins.io/" target="_blank" rel="noreferrer" title="Открыть справку: Jenkins">Jenkins</a>
+        <a class="chip" href="https://en.wikipedia.org/wiki/CI/CD" target="_blank" rel="noreferrer" title="Открыть справку: CI/CD">CI/CD</a>
+        <a class="chip" href="https://www.kernel.org/" target="_blank" rel="noreferrer" title="Открыть справку: Linux">Linux</a>
+        <a class="chip" href="https://git-scm.com/" target="_blank" rel="noreferrer" title="Открыть справку: Git">Git</a>
+        <a class="chip" href="https://yandex.cloud/" target="_blank" rel="noreferrer" title="Открыть справку: Yandex Cloud">Yandex Cloud</a>
+        <a class="chip" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer" title="Открыть справку: CSS">CSS</a>
+        <a class="chip" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" title="Открыть справку: JavaScript">JavaScript</a>
+        <a class="chip" href="https://livewire.laravel.com/" target="_blank" rel="noreferrer" title="Открыть справку: Laravel Livewire">Laravel Livewire</a>
+        <a class="chip" href="https://wordpress.org/" target="_blank" rel="noreferrer" title="Открыть справку: WordPress">WordPress</a>
+        <a class="chip" href="https://www.drupal.org/" target="_blank" rel="noreferrer" title="Открыть справку: Drupal">Drupal</a>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="exp_eyebrow">Опыт</p>
+        <h2 data-i18n="exp_title">Ключевые проекты</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item project-card">
+          <div class="time">03/2018 - 01/2024</div>
+          <div>
+            <h3>HeadMage</h3>
+            <p class="role" data-i18n="exp_headmage_role">Основатель / технический директор веб-студии</p>
+            <ul>
+              <li data-i18n="exp_headmage_1">Руководил собственной веб-студией, специализировавшейся на Laravel, Magento, CRM и e-commerce проектах.</li>
+              <li data-i18n="exp_headmage_2">Проектировал архитектуру интернет-магазинов, CRM-систем и интеграционных решений для российских и зарубежных заказчиков.</li>
+              <li data-i18n="exp_headmage_3">Отвечал за полный цикл реализации: оценка, планирование, разработка, релизы, запуск и дальнейшая поддержка.</li>
+              <li data-i18n="exp_headmage_4">Организовывал процессы разработки, Code Review, CI/CD и выпуск релизов с использованием Jenkins.</li>
+            </ul>
+            <details class="more-box">
+              <summary data-i18n="more_project">Подробнее</summary>
+              <ul>
+                <li data-i18n="exp_headmage_more_1">Работал с заказчиками напрямую: помогал превращать бизнес-задачи в понятные технические требования и план разработки.</li>
+                <li data-i18n="exp_headmage_more_2">Подбирал решения под бюджет, сроки и состояние существующего проекта: от доработки legacy-кода до проектирования новых модулей.</li>
+                <li data-i18n="exp_headmage_more_3">Совмещал техническую работу с управлением командой: постановка задач, проверка решений, контроль релизов и поддержка после запуска.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+        <article class="timeline-item project-card">
+          <div class="time">09/2024 - 09/2025</div>
+          <div>
+            <h3>СБИС / Saby</h3>
+            <p class="role" data-i18n="exp_saby_role">Руководитель подразделения / ведущий Python-разработчик</p>
+            <ul>
+              <li data-i18n="exp_saby_1">Развивал платформу поиска, обработки и анализа данных о компаниях и владельцах.</li>
+              <li data-i18n="exp_saby_2">Разрабатывал функционал поиска, фильтрации и обработки больших объемов данных на Python и PostgreSQL.</li>
+              <li data-i18n="exp_saby_3">Внедрил практику автоматических тестов и TDD для повышения качества разработки.</li>
+              <li data-i18n="exp_saby_4">Оптимизировал бизнес-логику и SQL-запросы, повышая производительность платформы.</li>
+              <li data-i18n="exp_saby_5">Подготавливал и декомпозировал задачи, проводил Code Review и участвовал в развитии процессов разработки.</li>
+            </ul>
+            <details class="more-box">
+              <summary data-i18n="more_project">Подробнее</summary>
+              <ul>
+                <li data-i18n="exp_saby_more_1">Работал с проблемной платформой, где было важно повысить стабильность изменений и снизить количество ошибок.</li>
+                <li data-i18n="exp_saby_more_2">Внедрение автотестов и TDD помогало безопаснее менять бизнес-логику и быстрее проверять корректность доработок.</li>
+                <li data-i18n="exp_saby_more_3">Code Review использовался не только для контроля качества, но и для выравнивания подходов внутри подразделения.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+        <article class="timeline-item project-card">
+          <div class="time">06/2024 - 08/2024</div>
+          <div>
+            <h3>TopGo</h3>
+            <p class="role" data-i18n="exp_topgo_role">Ведущий PHP-разработчик / архитектор микросервисов</p>
+            <ul>
+              <li data-i18n="exp_topgo_1">Спроектировал и реализовал отказоустойчивый микросервис уведомлений для агрегатора курьерской доставки.</li>
+              <li data-i18n="exp_topgo_2">Внедрил Kafka для быстрой и бесперебойной доставки уведомлений курьерам.</li>
+              <li data-i18n="exp_topgo_3">Интегрировал ClickHouse для хранения аналитических данных, логов и истории действий.</li>
+              <li data-i18n="exp_topgo_4">Настроил CI/CD процессы автоматической сборки и деплоя в инфраструктуре Yandex Cloud.</li>
+              <li data-i18n="exp_topgo_5">Координировал техническое взаимодействие с внешними подрядчиками по разработке и тестированию.</li>
+            </ul>
+            <details class="more-box">
+              <summary data-i18n="more_project">Подробнее</summary>
+              <ul>
+                <li data-i18n="exp_topgo_more_1">Kafka использовалась для доставки событий уведомлений без блокировки основного сценария работы сервиса.</li>
+                <li data-i18n="exp_topgo_more_2">ClickHouse был интегрирован как хранилище аналитических данных, логов и истории действий с возможностью автоматической очистки устаревших записей.</li>
+                <li data-i18n="exp_topgo_more_3">Отдельное внимание уделялось отказоустойчивости и предсказуемому деплою в облачной инфраструктуре.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+        <article class="timeline-item project-card">
+          <div class="time">09/2016 - 03/2021</div>
+          <div>
+            <h3>ThriveMarket</h3>
+            <p class="role" data-i18n="exp_thrive_role">Ведущий PHP-разработчик, удаленный контракт</p>
+            <ul>
+              <li data-i18n="exp_thrive_1">Работал над крупной e-commerce платформой по продаже органических продуктов по подписочной модели.</li>
+              <li data-i18n="exp_thrive_2">Интегрировал систему очередей Kafka в экосистему Magento для повышения отказоустойчивости и масштабируемости.</li>
+              <li data-i18n="exp_thrive_3">Спроектировал и реализовал систему автоматической повторяемой доставки товаров.</li>
+              <li data-i18n="exp_thrive_4">Поддерживал интеграции с Braintree, DHL, Sailthru и другими внешними сервисами.</li>
+              <li data-i18n="exp_thrive_5">Разрабатывал REST API и покрывал бизнес-логику автоматизированными тестами.</li>
+            </ul>
+            <details class="more-box">
+              <summary data-i18n="more_project">Подробнее</summary>
+              <ul>
+                <li data-i18n="exp_thrive_more_1">Работал с критичными частями e-commerce платформы: подписки, повторные заказы, платежи, логистика и внешние интеграции.</li>
+                <li data-i18n="exp_thrive_more_2">Kafka помогала выносить тяжелые и асинхронные операции из основного пользовательского сценария.</li>
+                <li data-i18n="exp_thrive_more_3">Поддерживал REST-слой для frontend-приложений и писал автоматизированные тесты для бизнес-логики.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+        <article class="timeline-item project-card">
+          <div class="time">02/2014 - 09/2016</div>
+          <div>
+            <h3>BloomNation</h3>
+            <p class="role" data-i18n="exp_bloom_role">Ведущий PHP-разработчик, удаленный контракт</p>
+            <ul>
+              <li data-i18n="exp_bloom_1">Развивал Magento-маркетплейс для продавцов цветочной продукции.</li>
+              <li data-i18n="exp_bloom_2">Разрабатывал личный кабинет продавца, управление каталогом товаров и обработку заказов.</li>
+              <li data-i18n="exp_bloom_3">Оптимизировал процессы продавцов с помощью асинхронной обработки данных и очередей.</li>
+              <li data-i18n="exp_bloom_4">Интегрировал Stripe и сопутствующие сервисы.</li>
+              <li data-i18n="exp_bloom_5">Участвовал в развитии мультидоменной платформы для маркетплейса и отдельных сайтов продавцов.</li>
+            </ul>
+            <details class="more-box">
+              <summary data-i18n="more_project">Подробнее</summary>
+              <ul>
+                <li data-i18n="exp_bloom_more_1">Проект был не обычным интернет-магазином, а маркетплейсом с большим количеством продавцов и отдельными сайтами.</li>
+                <li data-i18n="exp_bloom_more_2">Работал с кабинетом продавца, каталогом, заказами, промо-механиками и мультидоменной архитектурой Magento.</li>
+                <li data-i18n="exp_bloom_more_3">Асинхронная обработка помогала ускорять операции продавцов и снижать нагрузку на основную систему.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section current-section">
+      <div class="current-card">
+        <p class="eyebrow" data-i18n="current_eyebrow">Сейчас</p>
+        <h2 data-i18n="current_title">Текущая деятельность</h2>
+        <p data-i18n="current_text">Проектная разработка и поддержка веб-систем. Последний проект — CRM для агентства недвижимости на Laravel.</p>
+        <details class="more-box current-more">
+          <summary data-i18n="current_more_title">Подробнее о текущем проекте</summary>
+          <ul>
+            <li data-i18n="current_more_1">Проектирование архитектуры CRM-системы с нуля на Laravel.</li>
+            <li data-i18n="current_more_2">Автоматический сбор, парсинг и обработка данных по рынку недвижимости из разных источников.</li>
+            <li data-i18n="current_more_3">Интеграция SMS, Email и внешних сервисов уведомлений.</li>
+            <li data-i18n="current_more_4">Использование AI-инструментов для обработки входящей информации и анализа данных.</li>
+            <li data-i18n="current_more_5">Цель проекта — автоматизация внутренних процессов и снижение ручной работы сотрудников агентства.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <div>
+        <p class="eyebrow" data-i18n="contacts_eyebrow">Контакты</p>
+        <h2 data-i18n="contacts_title">Обсудим ваш проект</h2>
+        <p data-i18n="contacts_text">Подходит формат проектной работы, контракта, поддержки или разработки системы под ключ.</p>
+      </div>
+      <div class="contact-links">
+        <a href="https://t.me/websystems_backend" target="_blank" rel="noreferrer">Telegram: @websystems_backend</a>
+        <a href="mailto:websystems.backend@gmail.com">websystems.backend@gmail.com</a>
+        <a href="https://github.com/websystemsbackend" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/websystemsbackend" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> WebSystems Backend</footer>
+  <script src="script.js"></script>
+</body>
+</html>
