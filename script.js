@@ -131,3 +131,39 @@ modalBackdrop.addEventListener('click', (event) => {
 document.addEventListener('keydown', (event) => {
   if(event.key === 'Escape' && !modalBackdrop.hidden) closeModal();
 });
+
+// v18: accurate anchor scrolling.
+// The section itself has top padding, so native #anchors stop too early and leave
+// a large empty gap before the title. Scroll to the section heading instead.
+function getAnchorScrollTarget(section){
+  if(!section) return null;
+  return section.querySelector(':scope > .contacts-eyebrow, :scope > .section-head, :scope > .eyebrow, .section-head, .eyebrow') || section;
+}
+
+function scrollToSectionHeading(hash, pushState = true){
+  if(!hash || hash === '#') return false;
+  const section = document.querySelector(hash);
+  if(!section) return false;
+
+  const header = document.querySelector('.site-header');
+  const headerHeight = header ? header.offsetHeight : 0;
+  const target = getAnchorScrollTarget(section);
+  const top = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 24;
+
+  window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  if(pushState) history.pushState(null, '', hash);
+  return true;
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', event => {
+    const hash = link.getAttribute('href');
+    if(scrollToSectionHeading(hash, true)) event.preventDefault();
+  });
+});
+
+window.addEventListener('load', () => {
+  if(window.location.hash) {
+    window.setTimeout(() => scrollToSectionHeading(window.location.hash, false), 80);
+  }
+});

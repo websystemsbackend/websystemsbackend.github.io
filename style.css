@@ -111,3 +111,42 @@ section{scroll-margin-top:92px}
 .contact-panel{
   width:100%;
 }
+
+
+/* v16 contacts: title label above the full contacts block */
+#contacts{
+  display:block;
+}
+#contacts .contacts-eyebrow{
+  color:var(--accent);
+  margin:0 0 18px;
+}
+#contacts .contacts-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:48px;
+  align-items:start;
+}
+#contacts .section-head{
+  margin-bottom:0;
+  max-width:100%;
+}
+#contacts .section-head .eyebrow{
+  display:none;
+}
+@media (max-width:900px){
+  #contacts .contacts-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+/* v17: one shared contacts heading above both columns */
+#contacts{display:block;}
+#contacts > .contacts-eyebrow{display:block;color:var(--accent);margin:0 0 18px;}
+#contacts .contacts-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start;}
+#contacts .section-head > .eyebrow{display:none!important;}
+@media (max-width:900px){#contacts .contacts-grid{grid-template-columns:1fr;}}
+
+
+/* v19 contacts title spacing */
+#contacts .section-head h2{margin-bottom:24px;}
